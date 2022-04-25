@@ -1,11 +1,18 @@
 #include <iostream>
+#include <stdio.h>
+#include <string>
+#include <array>
 
-
-int main(int argc, char const *argv[])
+using namespace std;
+auto main() -> int
 {
-    auto t { 10 };
-    int i = 10;
-    std::cout << sizeof(t) << std::endl << sizeof(i);
+    string chandler;
+    string str;
+ 
+    cout << "Please enter your name: \n";
+    getline(cin, chandler);
+
+    cout << "Hello, " << chandler << endl;
 
     return 0;
 }
