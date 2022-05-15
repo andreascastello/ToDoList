@@ -1,18 +1,16 @@
+#include "ToDoList.hpp"
+
 #include <iostream>
-#include <stdio.h>
 #include <string>
-#include <array>
 
-using namespace std;
-auto main() -> int
+int main()
 {
-    string chandler;
-    string str;
- 
-    cout << "Please enter your name: \n";
-    getline(cin, chandler);
+    ToDoList todolist;
 
-    cout << "Hello, " << chandler << endl;
+    todolist.addTask();
+    todolist.addTask(E_Colors::RED);
+
+    todolist.printAllTasks();
 
     return 0;
 }
