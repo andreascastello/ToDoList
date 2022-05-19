@@ -2,26 +2,29 @@
 #ifndef TODOLIST_H
 #define TODOLIST_H
 
+#include "E_Importance.hpp"
 #include "Task.hpp"
 #include <vector>
+#include <memory>
 
 class ToDoList
 {
     private:
-        std::vector<Task> _tasks;
+        std::vector<std::unique_ptr<Task>> _tasks;
         unsigned int _compteur;
     public:
         ToDoList(/* args */);
         ~ToDoList();
 
         //ajoute une tache
-        void addTask (E_Colors color = E_Colors::NO_COLOR);
-
+        void addTask (E_Colors color = E_Colors::NO_COLOR, E_Importance importance = E_Importance::NO_IMPORTANCE);
+        void addHighImportantTask ();
+        void addLowImportantTask ();
         //supprime une tache
         void delTask (unsigned int id);
 
-        //lit une tache
-        std::vector<Task> readTask () const;
+        //li une tache
+        std::vector<std::unique_ptr<Task>> const& readTask () const;
         void printAllTasks();
 };
 

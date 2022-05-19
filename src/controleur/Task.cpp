@@ -30,10 +30,10 @@ std::string Task::getColor() const{
     // return color_name;
     switch (_color)
     {
-    case E_Colors::BLUE : return "Blue";
-    case E_Colors::RED : return "Red";
-    case E_Colors::GREEN : return "Green";
-    
-    default: return "no colors";
+        case E_Colors::BLUE : return "Blue";
+        case E_Colors::RED : return "Red";
+        case E_Colors::GREEN : return "Green";
+        
+        default: return "no colors";
     }
 }

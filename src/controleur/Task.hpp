@@ -11,14 +11,17 @@ class Task
         std::string _textOfTask;
         unsigned int _id;
         E_Colors _color;
+
     public:
         Task(std::string str, E_Colors color = E_Colors::NO_COLOR);
-        ~Task();
+        virtual ~Task();
 
         unsigned int getId() const;
         std::string getColor() const;
         std::string getTextOfTask() const;
         void setId(unsigned int id);
+        
+        //virtual void changeTypeTask(task, type de fin);
 };
 
 #endif

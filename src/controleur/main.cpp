@@ -3,14 +3,17 @@
 #include <iostream>
 #include <string>
 
+
 int main()
 {
     ToDoList todolist;
 
     todolist.addTask();
-    todolist.addTask(E_Colors::RED);
+    todolist.addHighImportantTask();
+    todolist.addLowImportantTask();
 
     todolist.printAllTasks();
+
 
     return 0;
 }
