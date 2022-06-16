@@ -1,1 +1,9 @@
 g++ -o todo -I . *.cpp
+
+//colors
+Container<std::map<Cle, value>>
+
+Container<Theme>{
+    Background, red;
+    Text, white;
+}

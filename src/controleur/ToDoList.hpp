@@ -12,20 +12,27 @@ class ToDoList
     private:
         std::vector<std::unique_ptr<Task>> _tasks;
         unsigned int _compteur;
+
     public:
         ToDoList(/* args */);
         ~ToDoList();
 
         //ajoute une tache
         void addTask (E_Colors color = E_Colors::NO_COLOR, E_Importance importance = E_Importance::NO_IMPORTANCE);
-        void addHighImportantTask ();
-        void addLowImportantTask ();
+        // void addHighImportantTask ();
+        // void addLowImportantTask ();
+        // void addMediumImportantTask();
+
+
         //supprime une tache
         void delTask (unsigned int id);
 
-        //li une tache
+        //lis une tache
         std::vector<std::unique_ptr<Task>> const& readTask () const;
         void printAllTasks();
+
+        //choisir l'importance de la tache
+        void choiceImportanceOfTask(unsigned int id, E_Importance importance);
 };
 
 #endif

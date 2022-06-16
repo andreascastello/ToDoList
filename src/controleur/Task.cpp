@@ -9,6 +9,10 @@ Task::Task(std::string str, E_Colors color)
     _id = 0;
 }
 
+Task::Task(unsigned int id, std::string str, E_Colors color)
+:_id(id), _textOfTask(str), _color(color)
+{}
+
 Task::~Task()
 {
 }

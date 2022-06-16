@@ -9,8 +9,7 @@ class TaskHigh : public Task
     private:
 
     public:
-        TaskHigh(std::string str, E_Colors color = E_Colors::NO_COLOR);
-        //void changeTypeTask() override;
+        TaskHigh(unsigned int id, std::string str, E_Colors color = E_Colors::NO_COLOR);
         ~TaskHigh();
 };
 

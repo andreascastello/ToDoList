@@ -4,7 +4,8 @@
 enum class E_Importance : int {
     NO_IMPORTANCE,
     HIGH,
-    LOW
+    LOW,
+    MEDIUM
 };
 
 

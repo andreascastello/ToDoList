@@ -14,14 +14,13 @@ class Task
 
     public:
         Task(std::string str, E_Colors color = E_Colors::NO_COLOR);
+        Task(unsigned int id, std::string str, E_Colors color = E_Colors::NO_COLOR);
         virtual ~Task();
 
         unsigned int getId() const;
         std::string getColor() const;
         std::string getTextOfTask() const;
         void setId(unsigned int id);
-        
-        //virtual void changeTypeTask(task, type de fin);
 };
 
 #endif
