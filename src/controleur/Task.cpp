@@ -37,7 +37,7 @@ std::string Task::getColor() const{
         case E_Colors::BLUE : return "Blue";
         case E_Colors::RED : return "Red";
         case E_Colors::GREEN : return "Green";
-        
+        case E_Colors::NO_COLOR:
         default: return "no colors";
     }
 }

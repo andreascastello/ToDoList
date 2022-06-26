@@ -18,11 +18,7 @@ class ToDoList
         ~ToDoList();
 
         //ajoute une tache
-        void addTask (E_Colors color = E_Colors::NO_COLOR, E_Importance importance = E_Importance::NO_IMPORTANCE);
-        // void addHighImportantTask ();
-        // void addLowImportantTask ();
-        // void addMediumImportantTask();
-
+        void addTask ();
 
         //supprime une tache
         void delTask (unsigned int id);

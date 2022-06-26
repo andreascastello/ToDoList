@@ -9,7 +9,7 @@ class TaskMedium : public Task
     private:
 
     public:
-        TaskMedium(std::string str, E_Colors color = E_Colors::NO_COLOR);
+        TaskMedium(unsigned int id, std::string str, E_Colors color = E_Colors::NO_COLOR);
         ~TaskMedium();
 };
 
